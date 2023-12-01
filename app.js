@@ -11,8 +11,6 @@ app.post('/svg-converter', (req, res) => {
   try{
     let svgTags = req.body.svgTags;
 
-    console.log("SVG TAGS: ",svgTags);
-    
     //convert svg tags to base64
     let base64 = Buffer.from(svgTags).toString('base64');
 
